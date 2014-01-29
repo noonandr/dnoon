@@ -26,27 +26,32 @@ That should be it to get to development.
 
 ## Deploy to Server
 
+Copy this repo to root if not an empty directory:
+
+```
+$ git clone git://github.com/noonandr/dnoon
+```
+
+If repo exists do a pull:
+
+```
+$ cd dnoon
+
+$ git pull git://github.com/noonandr/dnoon
+```
+
 Install node on Ubuntu:
 
 ```
 $ git clone https://github.com/joyent/node.git
-
 $ cd node
-
 $ git tag
-
 $ git checkout v0.10.25
-
 $ sudo make install
-
 $ node -v
-
 $ ./configure
-
 $ make
-
 $ node -v
-
 $ nvm use 0.10.25
 ```
 
@@ -54,7 +59,6 @@ Setup connect for server:
 
 ```
 $ sudo npm install connect
-
 $ npm install forever -g
 ```
 
