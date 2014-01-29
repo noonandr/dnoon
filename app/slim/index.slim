@@ -1,0 +1,29 @@
+== Slim::Template.new("app/slim/layout/header.slim").render
+
+.mainarea
+  .mainareawrapper
+    .circlebox
+      .circleborder
+        .circle
+          img src="images/me.jpg"
+      img src="images/arrow.svg"
+      | me
+    .circlebox
+      .circleborder
+        .circle
+          a href="/Daniel-Noonan-CV.pdf"
+            img src="images/cv.jpg"
+      img src="images/arrow.svg"
+      | cv
+    .circlebox
+      .circleborder
+        .circle
+          a href="/Daniel_Noonan-Portfolio.pdf"
+            img src="images/portfolio.jpg"
+      img src="images/arrow.svg"
+      | portfolio
+    .textBlock
+      h2 Designer. Developer. Tinkerer.
+      h3 User of: Ruby, node.js, SASS, CoffeeScript, Slim
+      
+== Slim::Template.new("app/slim/layout/footer.slim").render

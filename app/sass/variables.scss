@@ -1,0 +1,24 @@
+$background:#0f0f0f;
+$black:#0f0f0f;
+$white:#fff;
+$green:#95c11f;
+$red:#da0a3c;
+$violet:#3a4294;
+$orange:#ea7815;
+$blue:#529ed7;
+$purple:#79398d;
+$olive:#819d30;
+$grey:#333333;
+
+
+$grid-columns:12;
+$gutter: 0px;
+
+$mobile-size: 480px;
+$tablet-size: 768px;
+$desktop-size: 769px;
+$largedesktop-size: 1050px;
+
+$mobile: new-breakpoint(max-width $mobile-size 4);
+$tablet: new-breakpoint(max-width $tablet-size 12);
+$desktop: new-breakpoint(min-width $desktop-size 12);

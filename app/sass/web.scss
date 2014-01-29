@@ -1,0 +1,44 @@
+.webarea {
+  background:$orange;
+  .developwrapper {
+    @include outer-container;
+    .developtext {
+      text-align:center;
+      color:$white;
+      margin:60px 0 0 0;
+      @include media($mobile) {
+        font-size:13px;
+      }
+    }
+    .developerbox {
+      @include span-columns(4);
+      text-align:center;
+      color:$white;
+      font-size:22px;
+      line-height:40px;
+      margin-bottom:100px;
+      padding:0 20px;
+      p {
+        margin-top:40px;
+      }
+      @include media($mobile) {
+        @include span-columns(4);
+        font-size:20px;
+        padding:0 90px;
+        margin-bottom:20px;
+      }
+    }
+    .developerboxText {
+      @include span-columns(4);
+      margin-top:15%;
+      color:$white;
+      font-size:30px;
+      text-align:center;
+      @include media($mobile) {
+        @include span-columns(4);
+        font-size:18px;
+        margin-top:0px;
+      }
+    }
+  }
+}

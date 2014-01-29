@@ -1,0 +1,68 @@
+.mainarea {
+  background:$green;
+  .mainareawrapper {
+    @include outer-container;
+    text-align:center;
+    color:$white;
+    padding:40px 0 0 0;
+    .circlebox {
+      @include span-columns(4);
+      padding:50px;
+      font-size:24px;
+      @include media($tablet) {
+        padding:0px;
+        margin:0 0 30px 0;
+      }
+      @include media($mobile) {
+        @include span-columns(4);
+        padding:0 80px;
+      }
+      .circleborder {
+        @include border-bottom-radius(50%);
+        @include border-top-radius(50%);
+        background: url(images/circle.svg) no-repeat;
+        background-size: contain;
+        padding:20px;
+        margin:10px;
+        .circle {
+          @include border-bottom-radius(50%);
+          @include border-top-radius(50%);
+          overflow: hidden;
+        }
+      }
+      img {
+        max-width:100%;
+      }
+    }
+    .circlebox:nth-child(3) {
+      @include omega;
+    }
+    .textBlock {
+      @include outer-container;
+      text-align:center;
+      color:$white;
+      margin:0 0 80px 0;
+      h2 {
+        font-size:42px;
+        margin:0px;
+        @include media($tablet) {
+          margin:0 0 5px 0 !important;
+          font-size:32px;
+        }
+        @include media($mobile) {
+          font-size:20px;
+        }
+      }
+      h3 {
+        font-size:26px;
+        margin:0px;
+        @include media($tablet) {
+          font-size:20px;
+        }
+        @include media($mobile) {
+          font-size:12px;
+        }
+      }
+    }
+  }
+}

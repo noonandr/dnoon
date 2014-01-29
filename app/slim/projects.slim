@@ -1,0 +1,56 @@
+== Slim::Template.new("app/slim/layout/header.slim").render
+
+.pikuparea
+  .pikupwrapper
+    h1 Pikup
+    .pikupimage
+      img src="images/pikupmain.png"
+    .aboutPikup
+      h2 All about Pikup
+      p Pikup creates a personal digital diary of the media that defines our lives and then uses this data to enable you to financially support the creative industries.
+      p Pikup has two main focuses:
+      ol
+        li To create a private online diary of all the media people play on their electronics
+        li To create a new economic platform for fans to support the creative industry on the web
+      p The software runs on the iPhone, the iPad and the Mac. It records a log of all the media played through iTunes and the iPod software (music, podcasts, movies, tv, books and educational material) and uploads this information to our servers as a secure online diary.
+    .appAreas
+      .appAreasImage
+        img src="images/pikuplogo.png"
+      .appAreasText
+        h2 The Mac App
+        p For the project I created a OSX app that uploads information about the media being played in iTunes to the users account at <a href="https://www.pikup.com">pikup.com</a>.
+    .appAreas
+      .appAreasImage
+        img src="images/pikupiOS.png"
+      .appAreasText
+        h2 The iOS App
+        p The iOS App runs in the background and uploads information about the media played on the device. The iOS version can be found in the <a href="http://itunes.com/apps/pikup">App Store</a>.
+    .appAreas
+      .appAreasImage
+        img src="images/pikupcloud.png"
+      .appAreasText
+        h2 The Web App
+        p The web app allows the user to see a fully list of all the media played. More information can be seen at <a href="https://www.pikup.com/software">pikup.com/software</a>.
+    .videoPikup
+      .videoArea
+        h2 An introduction to Pikup
+        .flex-video
+          iframe allowFullScreen="" frameborder="0" src="http://player.vimeo.com/video/39625391?color=ffffff" webkitAllowFullScreen=""
+        p This was a soft video that I produced in order to introduce people to the concept behind the Pikup. The introduction animation was done by <a href="http://rowena-cooper.blogspot.co.uk/p/animation.html">Rowena Cooper</a> (featuring a friendly little robot and a DeLorean). The narration was provided by <a href="http://twitter.com/@BrightonPeach87">Em Dawson</a>.
+
+      .videoArea
+        h2 An introduction to the Software
+        .flex-video
+          iframe allowFullScreen="" frameborder="0" src="http://player.vimeo.com/video/39630734?color=ffffff" webkitAllowFullScreen=""
+        p This second video is to introduce people to how the software looks when it's running on you iPhone, iPad or Mac. I produce all the animation and the background music was provided by <a href="http://www.audioantihero.com/">Audio Antihero</a>. The track is Wojtek The Bear from the album Fighting Kites.
+.qrarea    
+  .qrcodewrapper
+    h1 QR Code Generator
+    a href="https://github.com/noonandr/QR-Converter-V2"
+       p I've written a little terminal app for creating QR Codes.
+    a href="https://github.com/noonandr/QR-Converter-V2"
+      img src="images/menu-icon-qr.svg"
+    a href="https://github.com/noonandr/QR-Converter-V2"
+      p Which might turn into a minor web app.
+
+== Slim::Template.new("app/slim/layout/footer.slim").render
