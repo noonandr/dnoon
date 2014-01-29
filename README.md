@@ -26,7 +26,7 @@ That should be it to get to development.
 
 ## Deploy to Server
 
-Copy this repo to root if not an empty directory:
+Clone this repo to root if not an empty directory:
 
 ```
 $ git clone git://github.com/noonandr/dnoon
@@ -36,7 +36,6 @@ If repo exists do a pull:
 
 ```
 $ cd dnoon
-
 $ git pull git://github.com/noonandr/dnoon
 ```
 
