@@ -84,13 +84,13 @@ a:hover {
         @include media($mobile) {
           li:nth-child(1) {
             width:50%;
-            text-align:left;
-            padding:14px 0 0 50px;
+            text-align:center;
+            padding:14px 0 0 0;
           }
           li:nth-child(2) {
             width:50%;
-            text-align:right;
-            padding:14px 40px 0 0;
+            text-align:center;
+            padding:14px 0 0 35px;
           }
         }
       }  
