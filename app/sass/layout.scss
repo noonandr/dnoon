@@ -80,8 +80,17 @@ a:hover {
           @include media($tablet) {
             width:100px;
           }
-          @include media($mobile) {
+        }
+        @include media($mobile) {
+          li:nth-child(1) {
             width:50%;
+            text-align:left;
+            padding:14px 0 0 50px;
+          }
+          li:nth-child(2) {
+            width:50%;
+            text-align:right;
+            padding:14px 40px 0 0;
           }
         }
       }  

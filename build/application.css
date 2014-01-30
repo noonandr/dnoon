@@ -499,8 +499,15 @@ a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  .menu .menuwrapper .menulinks ul li {
+  .menu .menuwrapper .menulinks ul li:nth-child(1) {
     width: 50%;
+    text-align: left;
+    padding: 14px 0 0 50px;
+  }
+  .menu .menuwrapper .menulinks ul li:nth-child(2) {
+    width: 50%;
+    text-align: right;
+    padding: 14px 40px 0 0;
   }
 }
 .menu .menuwrapper .menuicons {
